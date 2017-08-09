@@ -1,0 +1,17 @@
+Trans Controller Fixes
+
+
+Hardware Fixes:
+
+1. Removed diodes: U$6,U$8, U$10, U$12, U$14
+2. Cut trace from Arduino Digital Pin_10 to R13
+3. Soldered fly-wire between Arduino Digital Pin_2 (Pad J3) to R13
+4. Soldered inline resistors for 5V/12V LEDs
+5. Soldered fly-wire between R4 and R5 
+
+
+Software Fixes:
+
+1. Modified DAC Library to stop initiating clock with each call (allows use of multiple DACs) - SPI clock is initialized once in the Arduino setup code
+
+2. Arduino Digital Pin 2 configured as Digital input 3 
